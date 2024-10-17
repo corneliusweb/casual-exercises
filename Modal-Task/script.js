@@ -10,7 +10,7 @@ modalButtons.forEach(function (button) {
 		// Closing the modal
 		const closeModalButton = document.querySelector('.close-modal');
 
-		if (closeModalButton) { // To mae sure that modal content is parsed.
+		if (closeModalButton) { // To make sure that modal content is already parsed.
 			closeModalButton.onclick = function () {
 				hiddenModal.forEach(function (modal) {
 					modal.style.display = 'none';
