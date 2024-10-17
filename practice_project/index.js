@@ -1,6 +1,6 @@
-/** 
+/**
  * Practice Project: Magic Number Finder!
- * 
+ *
  * Let’s create a small game where you’re a magician looking for a "Magic Number" in a series of numbers.
  * Write a loop from 0 to 20.
  * Use break to stop when you find the magic number 13.
@@ -15,13 +15,13 @@ for (let i = 0; i <= 20; i++) {
 	console.log(i);
 }
 
-/** 
+/**
  * Practice Project: Treasure Hunt with Labels!
- * 
+ *
  * Imagine you're in a game where you have two levels of rooms:
  * The first level contains 3 main halls.
  * Each hall contains 3 treasure chests.
- * You want to stop searching all the halls as soon as you find a treasure chest with gold in Hall 2, Chest 2. 
+ * You want to stop searching all the halls as soon as you find a treasure chest with gold in Hall 2, Chest 2.
  * Use labels and break to stop the search once you find the treasure.
  */
 
