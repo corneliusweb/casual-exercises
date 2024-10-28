@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Practice Project</title>
-   <link rel="stylesheet" href="index.css">
-   <script type="module" src="index.js"></script>
-</head>
-<body>
-   
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Practice Project</title>
+		<link rel="stylesheet" href="index.css" />
+		<script type="module" src="index.js"></script>
+	</head>
+	<body>
+		<!-- HTML Structure -->
+		<div class="table">
+			<div class="plate">
+				<div class="apple">Click me</div>
+			</div>
+		</div>
+
+		<script>
+			// Table Listener (outermost)
+			document.querySelector('.table').addEventListener('click', (event) => {
+				console.log('Table clicked!');
+			}); // 'true' sets it to Capturing Phase
+
+			// Plate Listener (middle layer)
+			document.querySelector('.plate').addEventListener('click', (event) => {
+				console.log('Plate clicked!');
+			});
+
+			// Apple Listener (innermost element, target)
+			document.querySelector('.apple').addEventListener('click', (event) => {
+				console.log('Apple clicked!');
+				event.stopPropagation(); // Prevents bubbling, so only the apple click is logged
+			});
+		</script>
+	</body>
 </html>
